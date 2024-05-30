@@ -2,32 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --transparent: 0deg 0% 100% / 8%;
+    --transparent-foreground: 0 0% 98%;
+
+    --primary: 240 10% 3.9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 48.89 94.41% 71.96%;
+    --secondary-foreground: 240 10% 3.9%;
+
+    --lightGreen: 160 16.36% 89.22%;
+    --green: 162.16 33.94% 78.63%;
+    --darkGreen: 161.92 59.35% 24.12%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "roobert";
+  src: url("../fonts/roobert/RoobertRegular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("../fonts/roobert/RoobertMedium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("../fonts/roobert/RoobertSemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("../fonts/roobert/RoobertBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "clashdisplay";
+  src: url("../fonts/clashdisplay/ClashDisplay-Bold.woff2");
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url("../images/hero-background.png");
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: scroll;
 }
