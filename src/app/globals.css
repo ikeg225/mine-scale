@@ -26,6 +26,12 @@
     --green: 162.16 33.94% 78.63%;
     --darkGreen: 161.92 59.35% 24.12%;
 
+    --lightPurple: 226.83 46.07% 82.55%;
+    --darkPurple: 248.28 77.53% 63.33%;
+
+    --grey: 207.69 19.4% 13.14%;
+    --yellow: 48.89 94.41% 71.96%;
+
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
@@ -86,4 +92,13 @@
   background-repeat: repeat;
   background-size: contain;
   background-attachment: scroll;
+}
+
+.hover-arrow:hover .arrow-icon {
+  transform: translate(10px, -10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease-in-out;
 }

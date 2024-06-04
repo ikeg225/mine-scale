@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 interface HeroSectionProps {
@@ -16,16 +17,18 @@ export default function HeroSection({ elementRef }: HeroSectionProps) {
           instantly.
         </p>
         <div className="flex flex-row gap-5" ref={elementRef}>
-          <Button variant="secondary" size="xlg">
-            Start for Free
-          </Button>
-          <Button variant="default" size="xlg">
+          <Link href="/get-started">
+            <Button variant="secondary" size="xlg">
+              Start for Free
+            </Button>
+          </Link>
+          {/* <Button variant="default" size="xlg">
             Learn More
-          </Button>
+          </Button> */}
         </div>
       </div>
       <p className="text-center opacity-50 text-xs">
-        MineScale utilizes public proxies. Assume all data is monitored.
+        Minescale utilizes public proxies. Assume all data is monitored.
         Response times may vary. JavaScript not supported.
       </p>
     </section>

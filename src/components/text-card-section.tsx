@@ -8,6 +8,7 @@ interface TextCardSectionProps {
   description: string;
   iconColor?: string;
   Icon?: React.FC<React.SVGProps<SVGSVGElement>>;
+  elementRef?: React.RefObject<HTMLParagraphElement>;
 }
 
 export default function TextCardSection({
@@ -17,6 +18,7 @@ export default function TextCardSection({
   description,
   iconColor,
   Icon,
+  elementRef,
   descriptionColor = "opacity-70",
 }: TextCardSectionProps) {
   return (
@@ -36,7 +38,9 @@ export default function TextCardSection({
         >
           {title}
         </h1>
-        <p className={`mt-5 ${descriptionColor}`}>{description}</p>
+        <p ref={elementRef} className={`mt-5 ${descriptionColor}`}>
+          {description}
+        </p>
       </div>
     </div>
   );

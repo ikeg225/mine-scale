@@ -6,10 +6,10 @@ export default function MeetMineScaleSection() {
       <div className="bg-primary md:py-20 md:px-16 py-20 rounded-3xl container flex flex-col md:flex-row gap-10 md:gap-20 items-center">
         <div className="md:w-2/3">
           <h1 className="md:text-6xl text-5xl font-bold mt-3">
-            Meet MineScale
+            Meet Minescale
           </h1>
           <p className="mt-5">
-            MineScale simplifies web scraping with a single, easy-to-use API. No
+            Minescale simplifies web scraping with a single, easy-to-use API. No
             more dealing with blocks or unreliable proxies—we handle automatic
             proxy rotation, filter out bad proxies, and mimic human browsing
             behavior to keep your scraping undetected. Start extracting data

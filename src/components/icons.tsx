@@ -3,6 +3,9 @@ import {
   RiFlashlightLine,
   RiRobot2Line,
   RiCheckLine,
+  RiShieldKeyholeLine,
+  RiFingerprintLine,
+  RiArrowRightUpLine,
 } from "react-icons/ri";
 
 export const Icons = {
@@ -10,4 +13,7 @@ export const Icons = {
   flashlight: RiFlashlightLine,
   robot: RiRobot2Line,
   check: RiCheckLine,
+  key: RiShieldKeyholeLine,
+  fingerprint: RiFingerprintLine,
+  arrow: RiArrowRightUpLine,
 };
