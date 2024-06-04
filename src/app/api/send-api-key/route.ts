@@ -1,32 +1,56 @@
 import { db } from "@/lib/db";
 import { sendEmail } from "@/lib/utils";
 import { NextResponse } from "next/server";
+import { hash } from "bcrypt";
+import { v4 as uuidv4 } from "uuid";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { email } = body;
-    const newVerificationCode = Math.floor(100000 + Math.random() * 900000);
+    let apiKey = "";
 
-    // find user by email and update verification code and also return the user
-    const existingUserByEmail = await db.users.update({
-      where: { email: email },
-      data: { verification_code: newVerificationCode },
+    // Check if user exists, if yes, just update the API key
+    const existingUserByEmail = await db.users.findFirst({
+      where: {
+        email,
+      },
     });
 
+    // if the user doesn't exist, create a new user and send the API key
     if (!existingUserByEmail) {
-      return NextResponse.json(
-        { message: "email does not exists" },
-        { status: 409 }
-      );
+      const userId = uuidv4();
+
+      apiKey = uuidv4();
+      const hashedApiKey = await hash(apiKey, 10);
+
+      await db.users.create({
+        data: {
+          id: userId,
+          email,
+          apiKey: hashedApiKey,
+        },
+      });
+    } else {
+      apiKey = uuidv4();
+      const hashedApiKey = await hash(apiKey, 10);
+
+      await db.users.update({
+        where: {
+          email,
+        },
+        data: {
+          apiKey: hashedApiKey,
+        },
+      });
     }
 
-    const from_email = "Notify <no-reply@notify.careers>";
+    const from_email = "Minescale <no-reply@minescale.net>";
     await sendEmail(
       email,
       from_email,
-      "Notify: Verify Your Email!",
-      `Hey ${existingUserByEmail.first_name}! Thank you for signing up for Notify. Your email verification code is ${existingUserByEmail.verification_code}.`
+      "Minescale: Here's your API key!",
+      `Hey! Thank you for signing up for Minescale. Your API key is ${apiKey}. For more information on how to use it, visit https://minescale.net/documentation. If you have any questions, feel free to reach out to us at info@minescale.net. Happy scraping!`
     );
 
     return NextResponse.json({ status: 200 });

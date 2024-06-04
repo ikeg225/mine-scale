@@ -133,7 +133,7 @@ export default function Home() {
                 <TextCardSection
                   backgroundColor="bg-darkPurple"
                   textColor=""
-                  title="Get an API Key"
+                  title="Get your API Key"
                   iconColor="bg-foreground text-darkPurple"
                   Icon={Icons.key}
                   description="Sign up with your email, and we'll send your API key directly to your inbox. Your API key helps us track usage, prevent abuse, and understand how you use our product to continuously improve it."

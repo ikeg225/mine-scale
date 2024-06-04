@@ -4,7 +4,7 @@ import * as React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
+import Link from "next/link";
 import {
   Form,
   FormControl,
@@ -20,15 +20,12 @@ import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 
 const FormSchema = z.object({
-  firstName: z.string(),
-  lastName: z.string(),
   email: z.string().email(),
-  communicationEmails: z.boolean(),
 });
 
 export default function SettingsAccount() {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
-  const [email, setEmail] = React.useState<string>("");
+  const [isSuccess, setIsSuccess] = React.useState<boolean>(false);
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -37,7 +34,6 @@ export default function SettingsAccount() {
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     setIsLoading(true);
     const email = data.email.trim().toLowerCase();
-    setEmail(email);
 
     const response = await fetch("/api/send-api-key", {
       method: "POST",
@@ -55,6 +51,7 @@ export default function SettingsAccount() {
         description: `We've sent an API key to ${email}.`,
       });
       setIsLoading(false);
+      setIsSuccess(true);
     } else {
       toast({
         title: "Something went wrong.",
@@ -64,6 +61,12 @@ export default function SettingsAccount() {
       setIsLoading(false);
     }
   }
+
+  React.useEffect(() => {
+    document.body.classList.remove("bg-lightPurple");
+    document.body.classList.remove("bg-green");
+    document.body.classList.add("bg-background");
+  }, []);
 
   return (
     <div className="container hero flex h-screen w-screen flex-col items-center justify-center">
@@ -79,7 +82,7 @@ export default function SettingsAccount() {
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="flex flex-col md:flex-row gap-5 w-full pt-10"
+                className="flex flex-col md:flex-row md:gap-5 gap-3 w-full pt-10"
               >
                 <FormField
                   control={form.control}
@@ -99,7 +102,12 @@ export default function SettingsAccount() {
                     </FormItem>
                   )}
                 />
-                <Button variant="secondary" size="xlg" disabled={isLoading}>
+                <Button
+                  variant="secondary"
+                  size="xlg"
+                  disabled={isLoading}
+                  type="submit"
+                >
                   {isLoading && (
                     <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
                   )}
@@ -107,6 +115,16 @@ export default function SettingsAccount() {
                 </Button>
               </form>
             </Form>
+            {isSuccess && (
+              <Link href="/documentation">
+                <Button
+                  variant="link"
+                  className="text-foreground pt-10 opacity-50"
+                >
+                  View documentation for examples and details on API usage.
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { SendEmailCommand } from "@aws-sdk/client-ses";
+import { sesClient } from "@/lib/sesClient";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
