@@ -1,3 +1,5 @@
+import TextBubble from "@/components/text-bubble";
+
 interface ProblemStatementSectionProps {
   elementRef: React.RefObject<HTMLDivElement>;
 }
@@ -6,18 +8,20 @@ export default function ProblemStatementSection({
   elementRef,
 }: ProblemStatementSectionProps) {
   return (
-    <section className="hero flex flex-col items-center justify-center gap-10 bg-green py-28 px-24 rounded-3xl">
-      <h1 className="text-7xl font-bold text-primary">
+    <section className="hero flex flex-col items-center justify-center gap-10 bg-green md:py-28 md:px-24 py-20 container rounded-3xl">
+      <h1 className="md:text-7xl text-6xl font-bold text-primary">
         <span className="text-darkGreen">Web scraping</span> doesn't have to be
         this hard.
       </h1>
-      <div ref={elementRef}>
-        <ul className="text-5xl font-bold text-primary">
-          <li>&#x2022; Costly</li>
-          <li>&#x2022; Frequent blocks</li>
-          <li>&#x2022; Proxy management</li>
-          <li>&#x2022; Complex browser fingerprinting</li>
-        </ul>
+      <div ref={elementRef} className="flex flex-row gap-2 flex-wrap">
+        <TextBubble text="Expensive" />
+        <TextBubble text="Frequent blocks" />
+        <TextBubble text="Proxy management" />
+        <TextBubble text="TLS & HTTP/2 fingerprinting" />
+        <TextBubble text="Browser Headers" />
+        <TextBubble text="Cookie Headers" />
+        <TextBubble text="User Agent" />
+        <TextBubble text="Canvas fingerprinting" />
       </div>
     </section>
   );
