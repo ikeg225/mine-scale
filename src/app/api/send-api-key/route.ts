@@ -9,12 +9,12 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { email } = body;
 
-    // if (email === undefined || email === "info@minescale.net") {
-    //   return NextResponse.json(
-    //     { message: "Please provide a valid email address." },
-    //     { status: 400 }
-    //   );
-    // }
+    if (email === undefined || email === "info@minescale.net") {
+      return NextResponse.json(
+        { message: "Please provide a valid email address." },
+        { status: 400 }
+      );
+    }
 
     const existingUserByEmail = await db.users.findFirst({
       where: {
@@ -24,9 +24,6 @@ export async function POST(req: Request) {
 
     const apiKey = uuidv4();
     const hashedApiKey = await hash(apiKey, 10);
-
-    console.log(apiKey);
-    console.log(hashedApiKey);
 
     if (!existingUserByEmail) {
       const userId = uuidv4();
