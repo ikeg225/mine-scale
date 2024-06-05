@@ -26,15 +26,15 @@ export default function DocumentationPage() {
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-semibold">1. Getting started</h2>
             <p>
-              To use Minescale, you'll need an API key. This key helps us track
-              usage and monitor abuse. Simply enter your email into{" "}
+              To use Minescale, you&apos;ll need an API key. This key helps us
+              track usage and monitor abuse. Simply enter your email into{" "}
               <Link href="/get-started" className="underline">
                 this form
               </Link>
-              , and we'll send the key to your inbox. If you forget your API key
-              or need to change it, re-enter your email in the form to receive a
-              new one. For any issues obtaining an API key, please contact us at
-              info@minescale.net.
+              , and we&apos;ll send the key to your inbox. If you forget your
+              API key or need to change it, re-enter your email in the form to
+              receive a new one. For any issues obtaining an API key, please
+              contact us at info@minescale.net.
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -44,22 +44,22 @@ export default function DocumentationPage() {
             <p>
               Minescale is an ideal starter tool for your scraping needs,
               offering simple GET and POST requests with advanced proxy
-              management and browser fingerprinting. It's perfect if you:
+              management and browser fingerprinting. It&apos;s perfect if you:
             </p>
             <ul className="list-disc list-inside">
               <li>
-                Don't want to deal with the headaches of proxies and fingerprint
-                management
+                Don&apos;t want to deal with the headaches of proxies and
+                fingerprint management
               </li>
               <li>Want to test a new idea without the hassle of setup</li>
               <li>Frequently call APIs at a large scale</li>
               <li>
-                Find alternative tools/solutions too expensive and don't need
-                their extra functionality
+                Find alternative tools/solutions too expensive and don&apos;t
+                need their extra functionality
               </li>
               <li>
-                Need to scrape websites that don't require JavaScript or solving
-                captchas
+                Need to scrape websites that don&apos;t require JavaScript or
+                solving captchas
               </li>
             </ul>
           </div>
@@ -75,9 +75,10 @@ export default function DocumentationPage() {
               with fresh proxies, minimizing speed issues.
             </p>
             <p>
-              Additionally, Minescale doesn't load JavaScript, solve captchas,
-              or support browser interactions. If the data you need requires any
-              of these functionalities, Minescale won't be able to access it.
+              Additionally, Minescale doesn&apos;t load JavaScript, solve
+              captchas, or support browser interactions. If the data you need
+              requires any of these functionalities, Minescale won&apos;t be
+              able to access it.
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -85,17 +86,17 @@ export default function DocumentationPage() {
             <p>
               To use Minescale, make a POST request to our API at{" "}
               <span className="underline">https://api.minescale.net</span>.
-              Include your API key and a list of URLs you'd like to scrape. It's
-              recommended to batch multiple URLs in a single API call to reduce
-              response time since each request has a startup delay as we
-              allocate a new crawler.
+              Include your API key and a list of URLs you&apos;d like to scrape.
+              It&apos;s recommended to batch multiple URLs in a single API call
+              to reduce response time since each request has a startup delay as
+              we allocate a new crawler.
             </p>
             <p>
               Not all requests will be successfully fetched. In such cases, the
               unsuccessful request URLs will not be included in the response.
             </p>
             <p>
-              Here's an example using Minescale in Python with the requests
+              Here&apos;s an example using Minescale in Python with the requests
               library:
             </p>
             <pre className="language-python">
