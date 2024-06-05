@@ -6,6 +6,7 @@ import {
   RiShieldKeyholeLine,
   RiFingerprintLine,
   RiArrowRightUpLine,
+  RiSignalTowerLine,
 } from "react-icons/ri";
 
 export const Icons = {
@@ -16,4 +17,5 @@ export const Icons = {
   key: RiShieldKeyholeLine,
   fingerprint: RiFingerprintLine,
   arrow: RiArrowRightUpLine,
+  signal: RiSignalTowerLine,
 };

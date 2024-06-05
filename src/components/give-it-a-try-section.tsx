@@ -18,6 +18,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 import { Icons } from "@/components/icons";
+import Prism from "prismjs";
+import "prismjs/themes/prism.css";
+import "prismjs/components/prism-json";
 
 const FormSchema = z.object({
   url: z.string().url(),
@@ -56,12 +59,21 @@ export default function GiveItATrySection() {
     }
   }
 
+  React.useEffect(() => {
+    Prism.highlightAll();
+  }, [content]);
+
   return (
     <div className="container md:px-0">
       <div className="md:py-20 md:px-16 py-20 container rounded-3xl flex flex-col md:flex-row md:gap-20 gap-10 bg-primary-foreground h-[40rem]">
-        <h1 className="md:text-6xl text-5xl font-bold text-primary md:self-end md:w-1/3">
-          Test Our API
-        </h1>
+        <div className="md:self-end md:w-1/3">
+          <div className="p-3 rounded-full w-fit bg-yellow text-primary">
+            <Icons.signal className="h-8 w-8" />
+          </div>
+          <h1 className="md:text-6xl text-5xl font-bold text-primary mt-3">
+            Test Our API
+          </h1>
+        </div>
         <div className="md:w-2/3 h-full">
           <Form {...form}>
             <form
@@ -99,7 +111,7 @@ export default function GiveItATrySection() {
           </Form>
           {content && (
             <pre className="pt-5 overflow-scroll md:h-[30rem] h-[18rem]">
-              <code className="text-primary break-all whitespace-pre-wrap">
+              <code className="language-json text-primary break-all whitespace-pre-wrap">
                 {JSON.stringify(content, null, 2)}
               </code>
             </pre>
