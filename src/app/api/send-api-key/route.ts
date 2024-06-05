@@ -8,29 +8,28 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { email } = body;
-    let apiKey = "";
 
-    if (email === undefined || email === "info@minescale.net") {
-      return NextResponse.json(
-        { message: "Please provide a valid email address." },
-        { status: 400 }
-      );
-    }
+    // if (email === undefined || email === "info@minescale.net") {
+    //   return NextResponse.json(
+    //     { message: "Please provide a valid email address." },
+    //     { status: 400 }
+    //   );
+    // }
 
-    // Check if user exists, if yes, just update the API key
     const existingUserByEmail = await db.users.findFirst({
       where: {
         email,
       },
     });
 
-    // if the user doesn't exist, create a new user and send the API key
+    const apiKey = uuidv4();
+    const hashedApiKey = await hash(apiKey, 10);
+
+    console.log(apiKey);
+    console.log(hashedApiKey);
+
     if (!existingUserByEmail) {
       const userId = uuidv4();
-
-      apiKey = uuidv4();
-      const hashedApiKey = await hash(apiKey, 10);
-
       await db.users.create({
         data: {
           id: userId,
@@ -39,9 +38,6 @@ export async function POST(req: Request) {
         },
       });
     } else {
-      apiKey = uuidv4();
-      const hashedApiKey = await hash(apiKey, 10);
-
       await db.users.update({
         where: {
           email,
