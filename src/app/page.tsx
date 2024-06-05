@@ -136,7 +136,7 @@ export default function Home() {
                     title="Get your API Key"
                     iconColor="bg-foreground text-darkPurple"
                     Icon={Icons.key}
-                    description="Sign up with your email, and we'll send your API key directly to your inbox. Your API key helps us track usage, prevent abuse, and understand how you use our product to continuously improve it."
+                    description={`<a href="/get-started">Sign up</a> with your email, and we'll send your API key directly to your inbox. Your API key helps us track usage, prevent abuse, and understand how you use our product to continuously improve it.`}
                   />
                   <TextCardSection
                     backgroundColor="bg-grey"
@@ -144,7 +144,7 @@ export default function Home() {
                     title="Start Scraping"
                     iconColor="bg-foreground text-grey"
                     Icon={Icons.robot}
-                    description="Refer to our documentation for examples and details on API usage, including available types and parameters. Contact us at info@minescale.net for common questions, concerns, or limitations."
+                    description={`Refer to our <a href="/documentation">documentation</a> for examples and details on API usage, including available types and parameters. Contact us at info@minescale.net for common questions, concerns, or limitations.`}
                     elementRef={elementRefPurple2}
                   />
                 </div>

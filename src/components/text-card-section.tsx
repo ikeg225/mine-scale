@@ -38,9 +38,11 @@ export default function TextCardSection({
         >
           {title}
         </h1>
-        <p ref={elementRef} className={`mt-5 ${descriptionColor}`}>
-          {description}
-        </p>
+        <p
+          ref={elementRef}
+          className={`link mt-5 ${descriptionColor}`}
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </div>
     </div>
   );
