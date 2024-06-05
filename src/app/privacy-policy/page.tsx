@@ -208,15 +208,15 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             Location Data. We collect location data such as information about
-            your device's location, which can be either precise or imprecise.
-            How much information we collect depends on the type and settings of
-            the device you use to access the Services. For example, we may use
-            GPS and other technologies to collect geolocation data that tells us
-            your current location (based on your IP address). You can opt out of
-            allowing us to collect this information either by refusing access to
-            the information or by disabling your Location setting on your
-            device. However, if you choose to opt out, you may not be able to
-            use certain aspects of the Services.
+            your device&apos;s location, which can be either precise or
+            imprecise. How much information we collect depends on the type and
+            settings of the device you use to access the Services. For example,
+            we may use GPS and other technologies to collect geolocation data
+            that tells us your current location (based on your IP address). You
+            can opt out of allowing us to collect this information either by
+            refusing access to the information or by disabling your Location
+            setting on your device. However, if you choose to opt out, you may
+            not be able to use certain aspects of the Services.
           </li>
         </ul>
         <h2>
@@ -297,9 +297,11 @@ export default function PrivacyPolicy() {
         </ul>
         <ul>
           <li>
-            <strong>To save or protect an individual's vital interest.</strong>{" "}
+            <strong>
+              To save or protect an individual&apos;s vital interest.
+            </strong>{" "}
             We may process your information when necessary to save or protect an
-            individual's vital interest, such as to prevent harm.
+            individual&apos;s vital interest, such as to prevent harm.
           </li>
         </ul>
         <h2>
@@ -605,9 +607,9 @@ export default function PrivacyPolicy() {
           under 18 years of age, nor do we knowingly sell such personal
           information. By using the Services, you represent that you are at
           least 18 or that you are the parent or guardian of such a minor and
-          consent to such minor dependent's use of the Services. If we learn
-          that personal information from users less than 18 years of age has
-          been collected, we will deactivate the account and take reasonable
+          consent to such minor dependent&apos;s use of the Services. If we
+          learn that personal information from users less than 18 years of age
+          has been collected, we will deactivate the account and take reasonable
           measures to promptly delete such data from our records. If you become
           aware of any data we may have collected from children under age 18,
           please contact us at info@minescale.net.
@@ -913,7 +915,8 @@ export default function PrivacyPolicy() {
                 <p>
                   Inferences drawn from any of the collected personal
                   information listed above to create a profile or summary about,
-                  for example, an individual's preferences and characteristics
+                  for example, an individual&apos;s preferences and
+                  characteristics
                 </p>
               </td>
               <td>
@@ -985,8 +988,8 @@ export default function PrivacyPolicy() {
         <p>
           We may use your personal information for our own business purposes,
           such as for undertaking internal research for technological
-          development and demonstration. This is not considered to be "selling"
-          of your personal information.
+          development and demonstration. This is not considered to be
+          &quot;selling&quot; of your personal information.
         </p>
         <p>
           We have not disclosed, sold, or shared any personal information to
@@ -1039,7 +1042,7 @@ export default function PrivacyPolicy() {
           <li>
             <strong>Right to opt out</strong> of the processing of your personal
             data if it is used for targeted advertising (or sharing as defined
-            under California's privacy law), the sale of personal data, or
+            under California&apos;s privacy law), the sale of personal data, or
             profiling in furtherance of decisions that produce legal or
             similarly significant effects (&quot;profiling&quot;)
           </li>
@@ -1052,20 +1055,21 @@ export default function PrivacyPolicy() {
           <li>
             Right to obtain a list of the categories of third parties to which
             we have disclosed personal data (as permitted by applicable law,
-            including California's and Delaware's privacy law)
+            including California&apos;s and Delaware&apos;s privacy law)
           </li>
         </ul>
         <ul>
           <li>
             Right to obtain a list of specific third parties to which we have
             disclosed personal data (as permitted by applicable law, including
-            Oregon's privacy law)
+            Oregon&apos;s privacy law)
           </li>
         </ul>
         <ul>
           <li>
             Right to limit use and disclosure of sensitive personal data (as
-            permitted by applicable law, including California's privacy law)
+            permitted by applicable law, including California&apos;s privacy
+            law)
           </li>
         </ul>
         <ul>
@@ -1073,7 +1077,7 @@ export default function PrivacyPolicy() {
             Right to opt out of the collection of sensitive data and personal
             data collected through the operation of a voice or facial
             recognition feature (as permitted by applicable law, including
-            Florida's privacy law)
+            Florida&apos;s privacy law)
           </li>
         </ul>
         <p>
@@ -1146,12 +1150,12 @@ export default function PrivacyPolicy() {
         </p>
         <p>
           We may update this privacy notice from time to time. The updated
-          version will be indicated by an updated "Revised" date at the top of
-          this privacy notice. If we make material changes to this privacy
-          notice, we may notify you either by prominently posting a notice of
-          such changes or by directly sending you a notification. We encourage
-          you to review this privacy notice frequently to be informed of how we
-          are protecting your information.
+          version will be indicated by an updated &quot;Revised&quot; date at
+          the top of this privacy notice. If we make material changes to this
+          privacy notice, we may notify you either by prominently posting a
+          notice of such changes or by directly sending you a notification. We
+          encourage you to review this privacy notice frequently to be informed
+          of how we are protecting your information.
         </p>
         <h2>
           <strong>13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</strong>
