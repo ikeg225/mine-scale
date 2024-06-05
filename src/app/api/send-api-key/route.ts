@@ -1,7 +1,7 @@
 import { db } from "@/lib/db";
 import { sendEmail } from "@/lib/utils";
 import { NextResponse } from "next/server";
-import { hash } from "bcrypt";
+import { sha256 } from "js-sha256";
 import { v4 as uuidv4 } from "uuid";
 
 export async function POST(req: Request) {
@@ -9,12 +9,12 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { email } = body;
 
-    if (email === undefined || email === "info@minescale.net") {
-      return NextResponse.json(
-        { message: "Please provide a valid email address." },
-        { status: 400 }
-      );
-    }
+    // if (email === undefined || email === "info@minescale.net") {
+    //   return NextResponse.json(
+    //     { message: "Please provide a valid email address." },
+    //     { status: 400 }
+    //   );
+    // }
 
     const existingUserByEmail = await db.users.findFirst({
       where: {
@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     });
 
     const apiKey = uuidv4();
-    const hashedApiKey = await hash(apiKey, 10);
+    const hashedApiKey = sha256(apiKey);
 
     if (!existingUserByEmail) {
       const userId = uuidv4();
