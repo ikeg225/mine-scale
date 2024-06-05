@@ -103,6 +103,7 @@ export default function DocumentationPage() {
               <code>
                 {`import json
 import requests
+
 response = requests.post("https://api.minescale.net", json={
     "apiKey": "your_api_key_here", 
     "requests": [
