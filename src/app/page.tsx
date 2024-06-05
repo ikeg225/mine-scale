@@ -18,14 +18,13 @@ export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const elementRefPurple = useRef<HTMLSpanElement>(null);
   const elementRefPurple2 = useRef<HTMLParagraphElement>(null);
+  const [backgroundColor, setBackgroundColor] = React.useState("bg-background");
 
   useEffect(() => {
     const handleGreenIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document.body.classList.remove("bg-background");
-          document.body.classList.remove("bg-lightPurple");
-          document.body.classList.add("bg-green");
+          setBackgroundColor("bg-green");
         }
       });
     };
@@ -33,9 +32,7 @@ export default function Home() {
     const handleHeroIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document.body.classList.remove("bg-lightPurple");
-          document.body.classList.remove("bg-green");
-          document.body.classList.add("bg-background");
+          setBackgroundColor("bg-background");
         }
       });
     };
@@ -43,9 +40,7 @@ export default function Home() {
     const handlePurpleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document.body.classList.remove("bg-background");
-          document.body.classList.remove("bg-green");
-          document.body.classList.add("bg-lightPurple");
+          setBackgroundColor("bg-lightPurple");
         }
       });
     };
@@ -96,63 +91,71 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen">
+    <main className={`h-screen transition-colors ${backgroundColor}`}>
       <SiteHeader />
-      <div className="h-full">
+      <div className={`h-full transition-colors ${backgroundColor}`}>
         <HeroSection elementRef={heroRef} />
-        <div className="max-w-screen-lg relative mx-auto">
-          <div className="flex flex-col gap-10">
-            <ProblemStatementSection elementRef={elementRefGreen} />
-            <div className="flex flex-col gap-5">
-              <MeetMineScaleSection />
-              <div className="flex flex-col md:flex-row gap-5">
-                <TextCardSection
-                  backgroundColor="bg-darkGreen"
-                  textColor=""
-                  title="Seamless Integration"
-                  iconColor="bg-foreground text-darkGreen"
-                  Icon={Icons.flashlight}
-                  description="Our intuitive API is designed to be easy to use, even for those with limited coding experience. Getting started is as simple as entering two lines of code. You can smoothly replace your current functionality with our API, ensuring that you get exactly the data you need."
-                />
-                <TextCardSection
-                  backgroundColor="bg-lightGreen"
-                  textColor="text-background"
-                  descriptionColor="text-primary opacity-50"
-                  title="Human-like Behavior"
-                  iconColor="bg-primary text-lightGreen"
-                  Icon={Icons.fingerprint}
-                  description="Minescale mimics browser headers and TLS fingerprinting, ensuring your scraping is undetectable, minimizing blocks for more efficient data collection."
-                  elementRef={elementRefGreen2}
-                />
+        <div className={`transition-colors ${backgroundColor} pb-10`}>
+          <div
+            className={`max-w-screen-lg relative mx-auto transition-colors ${backgroundColor}`}
+          >
+            <div
+              className={`flex flex-col gap-10 transition-colors ${backgroundColor}`}
+            >
+              <ProblemStatementSection elementRef={elementRefGreen} />
+              <div className="flex flex-col gap-5">
+                <MeetMineScaleSection />
+                <div className="flex flex-col md:flex-row gap-5">
+                  <TextCardSection
+                    backgroundColor="bg-darkGreen"
+                    textColor=""
+                    title="Seamless Integration"
+                    iconColor="bg-foreground text-darkGreen"
+                    Icon={Icons.flashlight}
+                    description="Our intuitive API is designed to be easy to use, even for those with limited coding experience. Getting started is as simple as entering two lines of code. You can smoothly replace your current functionality with our API, ensuring that you get exactly the data you need."
+                  />
+                  <TextCardSection
+                    backgroundColor="bg-lightGreen"
+                    textColor="text-background"
+                    descriptionColor="text-primary opacity-50"
+                    title="Human-like Behavior"
+                    iconColor="bg-primary text-lightGreen"
+                    Icon={Icons.fingerprint}
+                    description="Minescale mimics browser headers and TLS fingerprinting, ensuring your scraping is undetectable, minimizing blocks for more efficient data collection."
+                    elementRef={elementRefGreen2}
+                  />
+                </div>
+                <GiveItATrySection />
               </div>
-              <GiveItATrySection />
-            </div>
-            <HowItWorksSection elementRef={elementRefPurple} />
-            <div className="flex flex-col gap-5">
-              <div className="flex flex-col md:flex-row gap-5">
-                <TextCardSection
-                  backgroundColor="bg-darkPurple"
-                  textColor=""
-                  title="Get your API Key"
-                  iconColor="bg-foreground text-darkPurple"
-                  Icon={Icons.key}
-                  description="Sign up with your email, and we'll send your API key directly to your inbox. Your API key helps us track usage, prevent abuse, and understand how you use our product to continuously improve it."
-                />
-                <TextCardSection
-                  backgroundColor="bg-grey"
-                  textColor=""
-                  title="Start Scraping"
-                  iconColor="bg-foreground text-grey"
-                  Icon={Icons.robot}
-                  description="Refer to our documentation for examples and details on API usage, including available types and parameters. Contact us at info@minescale.net for common questions, concerns, or limitations."
-                  elementRef={elementRefPurple2}
-                />
+              <HowItWorksSection elementRef={elementRefPurple} />
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-col md:flex-row gap-5">
+                  <TextCardSection
+                    backgroundColor="bg-darkPurple"
+                    textColor=""
+                    title="Get your API Key"
+                    iconColor="bg-foreground text-darkPurple"
+                    Icon={Icons.key}
+                    description="Sign up with your email, and we'll send your API key directly to your inbox. Your API key helps us track usage, prevent abuse, and understand how you use our product to continuously improve it."
+                  />
+                  <TextCardSection
+                    backgroundColor="bg-grey"
+                    textColor=""
+                    title="Start Scraping"
+                    iconColor="bg-foreground text-grey"
+                    Icon={Icons.robot}
+                    description="Refer to our documentation for examples and details on API usage, including available types and parameters. Contact us at info@minescale.net for common questions, concerns, or limitations."
+                    elementRef={elementRefPurple2}
+                  />
+                </div>
+                <GetStartedSection />
               </div>
-              <GetStartedSection />
             </div>
           </div>
         </div>
-        <SiteFooter />
+        <div className={`transition-colors ${backgroundColor}`}>
+          <SiteFooter />
+        </div>
       </div>
     </main>
   );

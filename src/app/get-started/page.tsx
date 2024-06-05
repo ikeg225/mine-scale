@@ -62,12 +62,6 @@ export default function SettingsAccount() {
     }
   }
 
-  React.useEffect(() => {
-    document.body.classList.remove("bg-lightPurple");
-    document.body.classList.remove("bg-green");
-    document.body.classList.add("bg-background");
-  }, []);
-
   return (
     <div className="container hero flex h-screen w-screen flex-col items-center justify-center">
       <div className="lg:p-8">

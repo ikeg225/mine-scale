@@ -6,6 +6,22 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: "Minescale",
   description: "Effortless Web Scraping with a Single API",
+  openGraph: {
+    title: "Minescale",
+    description: "Effortless Web Scraping with a Single API",
+    images: [
+      {
+        url: "https://minescale.net/cover.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+    url: "https://minescale.net",
+  },
+  twitter: {
+    card: "summary",
+  },
 };
 
 export default function RootLayout({
@@ -15,11 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen transition-colors bg-background font-roobert antialiased"
-        )}
-      >
+      <body className={cn("min-h-screen font-roobert antialiased")}>
         {children}
         <Toaster />
       </body>
