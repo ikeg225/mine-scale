@@ -16,11 +16,13 @@ export default function PrivacyPolicy() {
           <strong>Last updated June 04, 2024</strong>
         </h2>
         <p>
-          This privacy notice for Minescale ("<strong>we</strong>," "
-          <strong>us</strong>," or "<strong>our</strong>"), describes how and
-          why we might collect, store, use, and/or share ("
-          <strong>process</strong>") your information when you use our services
-          ("<strong>Services</strong>"), such as when you:
+          This privacy notice for Minescale (&quot;<strong>we</strong>,&quot;
+          &quot;
+          <strong>us</strong>,&quot; or &quot;<strong>our</strong>&quot;),
+          describes how and why we might collect, store, use, and/or share
+          (&quot;
+          <strong>process</strong>&quot;) your information when you use our
+          services (&quot;<strong>Services</strong>&quot;), such as when you:
         </p>
         <ul>
           <li>
@@ -111,11 +113,8 @@ export default function PrivacyPolicy() {
         </p>
         <p>
           <strong>How do you exercise your rights?</strong> The easiest way to
-          exercise your rights is by submitting a{" "}
-          <a href="https://app.termly.io/notify/7bfebc6e-5e07-4b3a-8e38-46b4392025f3">
-            data subject access request
-          </a>
-          , or by contacting us. We will consider and act upon any request in
+          exercise your rights is by submitting a data subject access request,
+          or by contacting us. We will consider and act upon any request in
           accordance with applicable data protection laws.
         </p>
         <p>
@@ -191,8 +190,8 @@ export default function PrivacyPolicy() {
             Services (such as the date/time stamps associated with your usage,
             pages and files viewed, searches, and other actions you take such as
             which features you use), device event information (such as system
-            activity, error reports (sometimes called "crash dumps"), and
-            hardware settings).
+            activity, error reports (sometimes called &quot;crash dumps&quot;),
+            and hardware settings).
           </li>
         </ul>
         <ul>
@@ -277,8 +276,9 @@ export default function PrivacyPolicy() {
             We may process the personal information you send to us for our
             marketing purposes, if this is in accordance with your marketing
             preferences. You can opt out of our marketing emails at any time.
-            For more information, see "
-            <a href="#privacyrights">WHAT ARE YOUR PRIVACY RIGHTS?</a>" below.
+            For more information, see &quot;
+            <a href="#privacyrights">WHAT ARE YOUR PRIVACY RIGHTS?</a>&quot;
+            below.
           </li>
         </ul>
         <ul>
@@ -520,14 +520,14 @@ export default function PrivacyPolicy() {
         </p>
         <p>
           To the extent these online tracking technologies are deemed to be a
-          "sale"/"sharing" (which includes targeted advertising, as defined
-          under the applicable laws) under applicable US state laws, you can opt
-          out of these online tracking technologies by submitting a request as
-          described below under section "
+          &quot;sale&quot;/&quot;sharing&quot; (which includes targeted
+          advertising, as defined under the applicable laws) under applicable US
+          state laws, you can opt out of these online tracking technologies by
+          submitting a request as described below under section &quot;
           <a href="#uslaws">
             DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
           </a>
-          "
+          &quot;
         </p>
         <p>
           Specific information about how we use such technologies and how you
@@ -633,8 +633,8 @@ export default function PrivacyPolicy() {
           automated decision-making. In certain circumstances, you may also have
           the right to object to the processing of your personal information.
           You can make such a request by contacting us by using the contact
-          details provided in the section "
-          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>"
+          details provided in the section &quot;
+          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>&quot;
           below.
         </p>
         <p>
@@ -668,8 +668,8 @@ export default function PrivacyPolicy() {
           and/or implied consent depending on the applicable law, you have the
           right to withdraw your consent at any time. You can withdraw your
           consent at any time by contacting us by using the contact details
-          provided in the section "
-          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>"
+          provided in the section &quot;
+          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>&quot;
           below.
         </p>
         <p>
@@ -685,8 +685,8 @@ export default function PrivacyPolicy() {
           <strong> </strong>You can unsubscribe from our marketing and
           promotional communications at any time by clicking on the unsubscribe
           link in the emails that we send, or by contacting us using the details
-          provided in the section "
-          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>"
+          provided in the section &quot;
+          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>&quot;
           below. You will then be removed from the marketing lists. However, we
           may still communicate with you - for example, to send you
           service-related messages that are necessary for the administration and
@@ -702,16 +702,16 @@ export default function PrivacyPolicy() {
         </h2>
         <p>
           Most web browsers and some mobile operating systems and mobile
-          applications include a Do-Not-Track ("DNT") feature or setting you can
-          activate to signal your privacy preference not to have data about your
-          online browsing activities monitored and collected. At this stage, no
-          uniform technology standard for recognizing and implementing DNT
-          signals has been finalized. As such, we do not currently respond to
-          DNT browser signals or any other mechanism that automatically
-          communicates your choice not to be tracked online. If a standard for
-          online tracking is adopted that we must follow in the future, we will
-          inform you about that practice in a revised version of this privacy
-          notice.
+          applications include a Do-Not-Track (&quot;DNT&quot;) feature or
+          setting you can activate to signal your privacy preference not to have
+          data about your online browsing activities monitored and collected. At
+          this stage, no uniform technology standard for recognizing and
+          implementing DNT signals has been finalized. As such, we do not
+          currently respond to DNT browser signals or any other mechanism that
+          automatically communicates your choice not to be tracked online. If a
+          standard for online tracking is adopted that we must follow in the
+          future, we will inform you about that practice in a revised version of
+          this privacy notice.
         </p>
         <p>
           California law requires us to let you know how we respond to web
@@ -957,15 +957,17 @@ export default function PrivacyPolicy() {
           <strong>Sources of Personal Information</strong>
         </p>
         <p>
-          Learn more about the sources of personal information we collect in "
-          <a href="#infocollect">WHAT INFORMATION DO WE COLLECT?</a>"
+          Learn more about the sources of personal information we collect in
+          &quot;
+          <a href="#infocollect">WHAT INFORMATION DO WE COLLECT?</a>&quot;
         </p>
         <p>
           <strong>How We Use and Share Personal Information</strong>
         </p>
         <p>
-          Learn about how we use your personal information in the section, "
-          <a href="#infouse">HOW DO WE PROCESS YOUR INFORMATION?</a>"
+          Learn about how we use your personal information in the section,
+          &quot;
+          <a href="#infouse">HOW DO WE PROCESS YOUR INFORMATION?</a>&quot;
         </p>
         <p>
           <strong>Will your information be shared with anyone else?</strong>
@@ -974,11 +976,11 @@ export default function PrivacyPolicy() {
           We may disclose your personal information with our service providers
           pursuant to a written contract between us and each service provider.
           Learn more about how we disclose personal information to in the
-          section, "
+          section, &quot;
           <a href="#whoshare">
             WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
           </a>
-          "
+          &quot;
         </p>
         <p>
           We may use your personal information for our own business purposes,
@@ -1039,7 +1041,7 @@ export default function PrivacyPolicy() {
             data if it is used for targeted advertising (or sharing as defined
             under California's privacy law), the sale of personal data, or
             profiling in furtherance of decisions that produce legal or
-            similarly significant effects ("profiling")
+            similarly significant effects (&quot;profiling&quot;)
           </li>
         </ul>
         <p>
@@ -1078,12 +1080,9 @@ export default function PrivacyPolicy() {
           <strong>How to Exercise Your Rights</strong>
         </p>
         <p>
-          To exercise these rights, you can contact us by submitting a{" "}
-          <a href="https://app.termly.io/notify/7bfebc6e-5e07-4b3a-8e38-46b4392025f3">
-            data subject access request
-          </a>
-          , by emailing us at info@minescale.net, or by referring to the contact
-          details at the bottom of this document.
+          To exercise these rights, you can contact us by submitting a data
+          subject access request, by emailing us at info@minescale.net, or by
+          referring to the contact details at the bottom of this document.
         </p>
         <p>
           Under certain US state data protection laws, you can designate an
@@ -1123,19 +1122,20 @@ export default function PrivacyPolicy() {
           denied, you may submit a complaint to your state attorney general.
         </p>
         <p>
-          <strong>California "Shine The Light" Law</strong>
+          <strong>California &quot;Shine The Light&quot; Law</strong>
         </p>
         <p>
-          California Civil Code Section 1798.83, also known as the "Shine The
-          Light" law, permits our users who are California residents to request
-          and obtain from us, once a year and free of charge, information about
-          categories of personal information (if any) we disclosed to third
-          parties for direct marketing purposes and the names and addresses of
-          all third parties with which we shared personal information in the
-          immediately preceding calendar year. If you are a California resident
-          and would like to make such a request, please submit your request in
-          writing to us by using the contact details provided in the section "
-          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>"
+          California Civil Code Section 1798.83, also known as the &quot;Shine
+          The Light&quot; law, permits our users who are California residents to
+          request and obtain from us, once a year and free of charge,
+          information about categories of personal information (if any) we
+          disclosed to third parties for direct marketing purposes and the names
+          and addresses of all third parties with which we shared personal
+          information in the immediately preceding calendar year. If you are a
+          California resident and would like to make such a request, please
+          submit your request in writing to us by using the contact details
+          provided in the section &quot;
+          <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>&quot;
         </p>
         <h2>
           <strong>12. DO WE MAKE UPDATES TO THIS NOTICE?</strong>
@@ -1174,11 +1174,8 @@ export default function PrivacyPolicy() {
           also have the right to withdraw your consent to our processing of your
           personal information. These rights may be limited in some
           circumstances by applicable law. To request to review, update, or
-          delete your personal information, please fill out and submit a{" "}
-          <a href="https://app.termly.io/notify/7bfebc6e-5e07-4b3a-8e38-46b4392025f3">
-            data subject access request
-          </a>
-          .
+          delete your personal information, please fill out and submit a data
+          subject access request.
         </p>
       </div>
       <SiteFooter />
