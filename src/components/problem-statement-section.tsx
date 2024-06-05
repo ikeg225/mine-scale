@@ -10,8 +10,8 @@ export default function ProblemStatementSection({
   return (
     <section className="hero flex flex-col items-center justify-center gap-10 bg-green md:py-28 md:px-24 py-20 container rounded-3xl">
       <h1 className="md:text-7xl text-6xl font-bold text-primary">
-        <span className="text-darkGreen">Web scraping</span> doesn't have to be
-        this hard.
+        <span className="text-darkGreen">Web scraping</span> doesn&apos;t have
+        to be this hard.
       </h1>
       <div ref={elementRef} className="flex flex-row gap-2 flex-wrap">
         <TextBubble text="Expensive" />
