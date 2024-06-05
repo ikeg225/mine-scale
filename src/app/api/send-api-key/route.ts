@@ -10,6 +10,13 @@ export async function POST(req: Request) {
     const { email } = body;
     let apiKey = "";
 
+    if (email === undefined || email === "info@minescale.net") {
+      return NextResponse.json(
+        { message: "Please provide a valid email address." },
+        { status: 400 }
+      );
+    }
+
     // Check if user exists, if yes, just update the API key
     const existingUserByEmail = await db.users.findFirst({
       where: {
