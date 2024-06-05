@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const data = await req.json();
 
     const payload = {
-      apiKey: "60848e42-2223-46bd-8f48-4d17f634e615",
+      apiKey: "e03f81ea-06d3-45f6-9ca9-76305bdda979",
       requests: [{ url: data.url }],
     };
 
