@@ -42,9 +42,9 @@ export default function DocumentationPage() {
               2. What Minescale can be used for
             </h2>
             <p>
-              Minescale is an ideal starter tool for your scraping needs,
-              offering simple GET and POST requests with advanced proxy
-              management and browser fingerprinting. It&apos;s perfect if you:
+              Minescale is an ideal tool for your scraping needs, offering
+              simple GET and POST requests with advanced proxy management and
+              browser fingerprinting. It&apos;s perfect if you:
             </p>
             <ul className="list-disc list-inside">
               <li>
@@ -53,10 +53,7 @@ export default function DocumentationPage() {
               </li>
               <li>Want to test a new idea without the hassle of setup</li>
               <li>Frequently call APIs at a large scale</li>
-              <li>
-                Find alternative tools/solutions too expensive and don&apos;t
-                need their extra functionality
-              </li>
+              <li>Find alternative tools/solutions too expensive</li>
               <li>
                 Need to scrape websites that don&apos;t require JavaScript or
                 solving captchas
@@ -66,19 +63,15 @@ export default function DocumentationPage() {
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-semibold">3. Minescale limitations</h2>
             <p>
-              Minescale uses public proxies scraped from the web, allowing us to
-              offer this service for free but with certain limitations. These
-              proxies cannot be fully trusted, so your data may be monitored;
-              avoid sending private or personal information. Since these proxies
-              are publicly available and often abused, response times may
-              sometimes be slow. However, our proxy pool is continuously updated
-              with fresh proxies, minimizing speed issues.
+              Minescale does not load JavaScript, solve captchas, or support
+              browser interactions. If the data you need requires any of these
+              functionalities, Minescale will not be able to access it. If
+              you&apos;d like to see any of these features implemented, please
+              reach out to us at info@minescale.net.
             </p>
             <p>
-              Additionally, Minescale doesn&apos;t load JavaScript, solve
-              captchas, or support browser interactions. If the data you need
-              requires any of these functionalities, Minescale won&apos;t be
-              able to access it.
+              To keep this service free to use, we limit users to 3,600 requests
+              per hour (1 request per second).
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -88,12 +81,12 @@ export default function DocumentationPage() {
               <span className="underline">https://api.minescale.net</span>.
               Include your API key and a list of URLs you&apos;d like to scrape.
               It&apos;s recommended to batch multiple URLs in a single API call
-              to reduce response time since each request has a startup delay as
-              we allocate a new crawler.
+              to reduce response time since we handle requests asynchronously.
             </p>
             <p>
               Not all requests will be successfully fetched. In such cases, the
-              unsuccessful request URLs will not be included in the response.
+              unsuccessful request URLs will contain an errored status code and
+              an error message.
             </p>
             <p>
               Here&apos;s an example using Minescale in Python with the requests
@@ -112,19 +105,26 @@ response = requests.post("https://api.minescale.net", json={
             "url": "https://example.com/jobs",
             "method": "POST",
             "payload": json.dumps({"limit": 20, "offset": 0}),
-            "headers": {"Content-Type": "application/json", "Another header": "header content"}
+            "headers": {"Content-Type": "application/json"}
         }
     ]
 })
 
-print(response.json())`}
+print(response.json())
+
+# [{'url': 'https://example.com',
+#   'method': 'GET',
+#   'headers': {},
+#   'statusCode': 200,
+#   'content': 'Some Text'},
+#  {'url': 'https://example.com/jobs',
+#   'method': 'POST',
+#   'payload': '{"limit": 20, "offset": 0}',
+#   'headers': {'Content-Type': 'application/json'},
+#   'statusCode': 403,
+#   'content': 'Some Error Message'}]`}
               </code>
             </pre>
-            <p>
-              In this example, we send a batch request containing one GET
-              request and one POST request. For the GET request, only the URL is
-              required. For the POST request, the URL and method are required.
-            </p>
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-semibold">5. Parameters and types</h2>

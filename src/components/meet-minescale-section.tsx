@@ -9,18 +9,19 @@ export default function MeetMineScaleSection() {
             Meet Minescale
           </h1>
           <p className="mt-5">
-            Minescale simplifies web scraping with a single, easy-to-use API. No
-            more dealing with blocks or unreliable proxies—we handle automatic
-            proxy rotation, filter out bad proxies, and mimic human browsing
-            behavior to keep your scraping undetected. Start extracting data
-            effortlessly and for free, focusing on what matters while we take
-            care of the complexities.
+            Whether you're an indie developer or a large team, Minescale has you
+            covered. Our service handles sourcing high-quality proxies, proxy
+            management, session management, proxy rotation, fingerprint
+            management, and much more. All these complexities of web scraping
+            are simplified into a single API that integrates seamlessly with
+            your existing projects. We take care of the headaches of web
+            scraping, so you can focus on what matters for your project.
           </p>
         </div>
         <div className="shrink-0 md:w-1/3 h-full flex flex-col gap-2">
-          <FeatureItem text="Public proxy scraping" />
-          <FeatureItem text="Proxy rotation and quality control" />
+          <FeatureItem text="High quality proxy management" />
           <FeatureItem text="Request header and browser fingerprint management" />
+          <FeatureItem text="Lightning-fast data retrieval" />
           <FeatureItem text="Single API supporting GET and POST requests" />
           <FeatureItem text="Completely free" />
         </div>

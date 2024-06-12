@@ -109,19 +109,19 @@ export default function Home() {
                   <TextCardSection
                     backgroundColor="bg-darkGreen"
                     textColor=""
-                    title="Seamless Integration"
+                    title="Cost Effective"
                     iconColor="bg-foreground text-darkGreen"
-                    Icon={Icons.flashlight}
-                    description="Our intuitive API is designed to be easy to use, even for those with limited coding experience. Getting started is as simple as entering two lines of code. You can smoothly replace your current functionality with our API, ensuring that you get exactly the data you need."
+                    Icon={Icons.infinity}
+                    description="Minescale offers web scraping at scale, which means lower prices for you. No need to test multiple services or deal with poor performance. We provide the essentials for free." // at incredibly low prices."
                   />
                   <TextCardSection
                     backgroundColor="bg-lightGreen"
                     textColor="text-background"
                     descriptionColor="text-primary opacity-50"
-                    title="Human-like Behavior"
+                    title="Fast Performance"
                     iconColor="bg-primary text-lightGreen"
-                    Icon={Icons.fingerprint}
-                    description="Minescale mimics browser headers and TLS fingerprinting, ensuring your scraping is undetectable, minimizing blocks for more efficient data collection."
+                    Icon={Icons.flashlight}
+                    description="Our API processes requests asynchronously, allowing you to bulk send URLs for fast scraping. Our advanced fingerprint management and high-quality proxies bypass captchas, ensuring quick and reliable data retrieval."
                     elementRef={elementRefGreen2}
                   />
                 </div>

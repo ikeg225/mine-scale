@@ -28,8 +28,7 @@ export default function HeroSection({ elementRef }: HeroSectionProps) {
         </div>
       </div>
       <p className="text-center opacity-50 text-xs">
-        Minescale utilizes public proxies. Assume all data is monitored.
-        Response times may vary. JavaScript not supported.
+        Minescale manages hundreds of thousands of requests daily.
       </p>
     </section>
   );

@@ -16,12 +16,12 @@ export default function ProblemStatementSection({
       <div ref={elementRef} className="flex flex-row gap-2 flex-wrap">
         <TextBubble text="Expensive" />
         <TextBubble text="Frequent blocks" />
+        <TextBubble text="Slow response times" />
         <TextBubble text="Proxy management" />
         <TextBubble text="TLS & HTTP/2 fingerprinting" />
         <TextBubble text="Browser Headers" />
         <TextBubble text="Cookie Headers" />
         <TextBubble text="User Agent" />
-        <TextBubble text="Canvas fingerprinting" />
       </div>
     </section>
   );

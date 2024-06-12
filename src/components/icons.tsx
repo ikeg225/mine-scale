@@ -7,6 +7,7 @@ import {
   RiFingerprintLine,
   RiArrowRightUpLine,
   RiSignalTowerLine,
+  RiInfinityLine,
 } from "react-icons/ri";
 
 export const Icons = {
@@ -18,4 +19,5 @@ export const Icons = {
   fingerprint: RiFingerprintLine,
   arrow: RiArrowRightUpLine,
   signal: RiSignalTowerLine,
+  infinity: RiInfinityLine,
 };
