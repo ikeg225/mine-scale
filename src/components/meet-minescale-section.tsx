@@ -9,9 +9,9 @@ export default function MeetMineScaleSection() {
             Meet Minescale
           </h1>
           <p className="mt-5">
-            Whether you're an indie developer or a large team, Minescale has you
-            covered. Our service handles sourcing high-quality proxies, proxy
-            management, session management, proxy rotation, fingerprint
+            Whether you&apos;re an indie developer or a large team, Minescale
+            has you covered. Our service handles sourcing high-quality proxies,
+            proxy management, session management, proxy rotation, fingerprint
             management, and much more. All these complexities of web scraping
             are simplified into a single API that integrates seamlessly with
             your existing projects. We take care of the headaches of web
