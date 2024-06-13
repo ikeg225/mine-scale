@@ -21,7 +21,7 @@ export default function TestimonialSection() {
           <p>
             &quot;From my experience, web scraping is complex, and affordable
             solutions are rare. Minescale offers a great alternative for
-            large-scale scraping tasks. I send over 500k requests daily to
+            large-scale scraping tasks. We send over 500k requests daily to
             Minescale, and it&apos;s fast and inexpensive.&quot;
           </p>
           <p className="font-bold opacity-50 text-sm hidden sm:block">

@@ -28,7 +28,7 @@ export default function HeroSection({ elementRef }: HeroSectionProps) {
         </div>
       </div>
       <p className="text-center opacity-50 text-xs">
-        Minescale manages hundreds of thousands of requests daily.
+        Minescale manages millions of requests daily.
       </p>
     </section>
   );

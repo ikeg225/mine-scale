@@ -20,7 +20,7 @@ export default function DocumentationPage() {
       <div className="py-10 container md:px-14">
         <div className="md:container flex flex-col gap-10">
           <div className="font-roobert text-center">
-            <h1 className="text-6xl font-semibold">The Docs</h1>
+            <h1 className="text-6xl font-semibold">Documentation</h1>
             <p>How to use Minescale</p>
           </div>
           <div className="flex flex-col gap-2">
