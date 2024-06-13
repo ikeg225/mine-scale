@@ -19,10 +19,10 @@ export default function TestimonialSection() {
         </div>
         <div className="flex flex-col gap-2">
           <p>
-            "From my experience, web scraping is complex, and affordable
+            &quot;From my experience, web scraping is complex, and affordable
             solutions are rare. Minescale offers a great alternative for
             large-scale scraping tasks. I send over 500k requests daily to
-            Minescale, and it's fast and inexpensive."
+            Minescale, and it&apos;s fast and inexpensive.&quot;
           </p>
           <p className="font-bold opacity-50 text-sm hidden sm:block">
             - Ethan, founder at Notify.Careers
