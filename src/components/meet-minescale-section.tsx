@@ -2,7 +2,7 @@ import FeatureItem from "@/components/feature-item";
 
 export default function MeetMineScaleSection() {
   return (
-    <div className="container md:px-0">
+    <div className="sm:container md:px-0">
       <div className="bg-primary md:py-20 md:px-16 py-20 rounded-3xl container flex flex-col md:flex-row gap-10 md:gap-20 items-center">
         <div className="md:w-2/3">
           <h1 className="md:text-6xl text-5xl font-bold mt-3">

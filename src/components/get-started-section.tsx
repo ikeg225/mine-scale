@@ -4,7 +4,7 @@ import { Icons } from "@/components/icons";
 export default function GetStartedSection() {
   return (
     <Link href="/get-started" className="hover-arrow">
-      <div className="container md:px-0">
+      <div className="sm:container md:px-0">
         <div className="md:py-20 md:px-16 py-20 container rounded-3xl flex flex-col md:flex-row gap-20 bg-primary-foreground md:h-[30rem]">
           <div className="text-primary md:self-end md:w-2/3">
             <h1 className="md:text-6xl text-5xl font-bold">Get Started</h1>

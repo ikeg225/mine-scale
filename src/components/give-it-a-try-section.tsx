@@ -64,7 +64,7 @@ export default function GiveItATrySection() {
   }, [content]);
 
   return (
-    <div className="container md:px-0">
+    <div className="sm:container md:px-0">
       <div className="md:py-20 md:px-16 py-20 container rounded-3xl flex flex-col md:flex-row md:gap-20 gap-10 bg-primary-foreground h-[40rem]">
         <div className="md:self-end md:w-1/3">
           <div className="p-3 rounded-full w-fit bg-yellow text-primary">
@@ -110,7 +110,7 @@ export default function GiveItATrySection() {
             </form>
           </Form>
           {content && (
-            <pre className="pt-5 overflow-scroll md:h-[30rem] h-[18rem]">
+            <pre className="pt-5 overflow-scroll md:h-[30rem] h-[14rem]">
               <code className="language-json text-primary break-all whitespace-pre-wrap">
                 {JSON.stringify(content, null, 2)}
               </code>

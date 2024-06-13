@@ -71,7 +71,8 @@ export default function DocumentationPage() {
             </p>
             <p>
               To keep this service free to use, we limit users to 3,600 requests
-              per hour (1 request per second).
+              per hour (1 request per second). If you need more requests, please
+              contact us at info@minescale.net.
             </p>
           </div>
           <div className="flex flex-col gap-2">

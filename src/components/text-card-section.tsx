@@ -22,7 +22,7 @@ export default function TextCardSection({
   descriptionColor = "opacity-70",
 }: TextCardSectionProps) {
   return (
-    <div className="container md:px-0">
+    <div className="sm:container md:px-0">
       <div
         className={`${backgroundColor} md:py-20 md:px-16 py-20 container rounded-3xl flex flex-col h-full`}
       >
@@ -32,7 +32,7 @@ export default function TextCardSection({
           </div>
         )}
         <h1
-          className={`md:text-6xl text-5xl font-bold ${
+          className={`md:text-6xl text-5xl font-bold break-normal ${
             Icon ? "mt-3" : ""
           } ${textColor}`}
         >

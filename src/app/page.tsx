@@ -11,6 +11,7 @@ import MeetMineScaleSection from "@/components/meet-minescale-section";
 import HowItWorksSection from "@/components/how-it-works-section";
 import GetStartedSection from "@/components/get-started-section";
 import SiteFooter from "@/components/site-footer";
+import TestimonialSection from "@/components/testimonial-section";
 
 export default function Home() {
   const elementRefGreen = useRef<HTMLDivElement>(null);
@@ -104,6 +105,7 @@ export default function Home() {
             >
               <ProblemStatementSection elementRef={elementRefGreen} />
               <div className="flex flex-col gap-5">
+                <TestimonialSection />
                 <MeetMineScaleSection />
                 <div className="flex flex-col md:flex-row gap-5">
                   <TextCardSection
@@ -118,7 +120,7 @@ export default function Home() {
                     backgroundColor="bg-lightGreen"
                     textColor="text-background"
                     descriptionColor="text-primary opacity-50"
-                    title="Fast Performance"
+                    title="Fast Response Times"
                     iconColor="bg-primary text-lightGreen"
                     Icon={Icons.flashlight}
                     description="Our API processes requests asynchronously, allowing you to bulk send URLs for fast scraping. Our advanced fingerprint management and high-quality proxies bypass captchas, ensuring quick and reliable data retrieval."

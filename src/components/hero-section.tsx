@@ -13,8 +13,8 @@ export default function HeroSection({ elementRef }: HeroSectionProps) {
           Effortless Web Scraping with a Single API
         </h1>
         <p className="text-center">
-          No more blocks. No more proxy headaches. Get the data you need,
-          instantly.
+          No more blocks. No more proxy headaches. Get the data you need at
+          scale.
         </p>
         <div className="flex flex-row gap-5" ref={elementRef}>
           <Link href="/get-started">
